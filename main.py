@@ -61,23 +61,23 @@ def main():
     print(ts.get_total_damage("Torino", 10))    # 62.5
     print(ts.get_total_damage("Avigliana", 6))  # 5
 
-    print("------------------------- R5 -------------------------")
-    ts.add_village("Usseaux", 33, 3)
-    ts.add_city("Savigliano", 25, 9)
+    # print("------------------------- R5 -------------------------")
+    # ts.add_village("Usseaux", 33, 3)
+    # ts.add_city("Savigliano", 25, 9)
 
-    ts.add_location("Usseaux", "Avigliana", 0.7)
-    ts.add_location("Savigliano", "Racconigi", 0.3)
+    # ts.add_location("Usseaux", "Avigliana", 0.7)
+    # ts.add_location("Savigliano", "Racconigi", 0.3)
 
-    next_loc, attenuation = ts.get_next("Avigliana")
-    print(next_loc.name, attenuation)   # Usseaux 0.5
+    # next_loc, attenuation = ts.get_next("Avigliana")
+    # print(next_loc.name, attenuation)   # Usseaux 0.5
 
-    next_loc, attenuation = ts.get_next("Usseaux")
-    print(next_loc.name, attenuation)   # Racconigi 0.7
+    # next_loc, attenuation = ts.get_next("Usseaux")
+    # print(next_loc.name, attenuation)   # Racconigi 0.7
 
-    next_loc, attenuation = ts.get_next("Racconigi")
-    print(next_loc.name, attenuation)   # Savigliano 0.3
+    # next_loc, attenuation = ts.get_next("Racconigi")
+    # print(next_loc.name, attenuation)   # Savigliano 0.3
 
-    print(ts.get_next("Savigliano"))    # None
+    # print(ts.get_next("Savigliano"))    # None
 
 
 if __name__ == "__main__":
